@@ -12,7 +12,11 @@ const fs = require('fs');
 // Middleware
 app.use(
   cors({
-    origin: ['http://localhost:5173'],
+    origin: [
+      'http://localhost:5173',
+      'https://school-mate-auth.web.app',
+      'https://code-trail-server.onrender.com',
+    ],
     credentials: true,
   })
 );
