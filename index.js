@@ -100,8 +100,8 @@ const messagesCollection = client.db('school-mate').collection('messages');
 
 async function run() {
   try {
-    await client.connect();
-    console.log('✅ Connected to MongoDB');
+    // await client.connect();
+    // console.log('✅ Connected to MongoDB');
 
     // GET user by email
     app.get('/users/email/:email', async (req, res) => {
